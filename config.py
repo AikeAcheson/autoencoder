@@ -7,16 +7,20 @@ test = '/Users/chyson/hx/data/kaggle-stain/test'
 
 mode = 'train'
 
-img_row = 320
-img_col = 320
+width = 320
+height = 320
+# img_row = 258
+# img_col = 540
 channels = 1
-img_shape = (img_row, img_col, channels)
+shape = (width, height, channels)
 
 checkpoints = 'checkpoints'
 if not os.path.exists(checkpoints):
     os.mkdir(checkpoints)
 model = ''
-start_epoch = 0
+start_epoch = 3
 
 fig_path = 'monitor.png'
 json_path = 'monitor.json'
+
+index = 3
